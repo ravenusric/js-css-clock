@@ -15,6 +15,7 @@
             <div class="hand hour-hand"></div>
             <div class="hand min-hand"></div>
             <div class="hand second-hand"></div>
+            <div class="hand center"></div>
         </div>
     </div>
 
@@ -70,6 +71,17 @@
             transform: rotate(90deg);
             transition: all 0.05s;
             transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+        }
+
+        .center {
+            width: 20px;
+            border-radius: 20px;
+            background: black;
+            position: relative;
+            text-align: center;
+            display: inline-block;
+            height: 20px;
+            margin-right: 25px;
         }
 
         .hour-hand {
